@@ -1,0 +1,145 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="B2Bv30.Principal" %>
+<%@ Register Src="~/UserControls/ucHeaderTop.ascx" TagName="header" TagPrefix="ucHea" %>
+<%@ Register Src="~/UserControls/ucNavigation.ascx" TagName="navigation" TagPrefix="ucNav" %>
+<%@ Register Src="~/UserControls/ucFooter.ascx" TagName="footer" TagPrefix="ucFooter" %>
+<%@ Register Src="~/UserControls/ucCategorias.ascx" TagName="categorias" TagPrefix="ucCat" %>
+<%@ Register Src="~/UserControls/ucMyCart.ascx" TagName="myCart" TagPrefix="ucMyCart" %>
+<%@ Register Src="~/UserControls/ucBannerIzquierda.ascx" TagName="bannerIzq" TagPrefix="ucBannerIz" %>
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if !IE]><!--> <html lang="es"><!--<![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head runat="server">
+    <!-- Palm -->
+    <meta name="HandheldFriendly" content="True" />
+    <!-- Windows -->
+    <meta name="MobileOptimized" content="320" />
+    <!-- Safari, Android, BB, Opera -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Neumáticos Atlántico - B2B</title>
+    <meta name="description" content="Default Description" />
+    <meta name="keywords" content="Magento, Varien, E-commerce" />
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <link rel="icon" href="http://magento-demo.net/MAG191/skin/frontend/default/MAG080146/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="http://magento-demo.net/MAG191/skin/frontend/default/MAG080146/favicon.ico" type="image/x-icon" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 7]>
+    <script type="text/javascript">
+    //<![CDATA[
+        var BLANK_URL = 'http://magento-demo.net/MAG191/js/blank.html';
+        var BLANK_IMG = 'http://magento-demo.net/MAG191/js/spacer.gif';
+    //]]>
+    </script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="<%=ResolveUrl("~/skin/frontend/default/MAG080146/css/styles.css")%>" media="all" />
+    <link rel="stylesheet" type="text/css" href="<%=ResolveUrl("~/skin/frontend/base/default/css/widgets.css")%>" media="all" />
+    <link rel="stylesheet" type="text/css" href="<%=ResolveUrl("~/skin/frontend/default/MAG080146/css/megnor/custom.css")%>" media="all" />
+    <link rel="stylesheet" type="text/css" href="<%=ResolveUrl("~/skin/frontend/default/MAG080146/css/megnor/tm_flexslider.css")%>" media="all" />
+    <link rel="stylesheet" type="text/css" href="<%=ResolveUrl("~/skin/frontend/default/MAG080146/css/megnor/carousel.css")%>" media="all" />
+    <link rel="stylesheet" type="text/css" href="<%=ResolveUrl("~/skin/frontend/default/MAG080146/css/megnor/style.css")%>" media="all" />
+    <link rel="stylesheet" type="text/css" href="<%=ResolveUrl("~/skin/frontend/default/MAG080146/css/megnor/responsive.css")%>" media="all" />
+    <link rel="stylesheet" type="text/css" href="<%=ResolveUrl("~/skin/frontend/default/MAG080146/css/megnor/cloud-lightbox-zoom.css")%>" media="all" />
+    <link rel="stylesheet" type="text/css" href="<%=ResolveUrl("~/skin/frontend/default/default/css/print.css")%>" media="print" />
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/prototype/prototype.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/lib/ccard.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/prototype/validation.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/scriptaculous/builder.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/scriptaculous/effects.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/scriptaculous/dragdrop.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/scriptaculous/controls.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/scriptaculous/slider.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/varien/js.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/varien/form.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/varien/menu.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/mage/translate.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/mage/cookies.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/megnor/html5.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/megnor/jquery-1.7.1.min.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/megnor/tm_jquery.flexslider.min.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/megnor/megnor.min.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/megnor/jquery.selectbox-0.2.min.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/megnor/carousel.min.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/megnor/jstree.min.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/megnor/scrolltop.min.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/megnor/advancedmenu.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/megnor/jquery.colorbox.min.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/megnor/cloud-zoom.1.0.2.min.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/skin/frontend/default/MAG080146/js/custom.js")%>"></script>
+
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://magento-demo.net/MAG191/skin/frontend/default/default/css/styles-ie.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://magento-demo.net/MAG191/js/lib/ds-sleight.js"></script>
+<script type="text/javascript" src="http://magento-demo.net/MAG191/skin/frontend/base/default/js/ie6.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+    //<![CDATA[
+    Mage.Cookies.path = '/MAG191/MAG080146';
+    Mage.Cookies.domain = '.magento-demo.net';
+    //]]>
+</script>
+
+<script type="text/javascript">
+    //<![CDATA[
+    optionalZipCountries = ["HK", "IE", "MO", "PA"];
+    //]]>
+</script>
+<script type="text/javascript">//<![CDATA[
+    var Translator = new Translate([]);
+    //]]>
+</script>
+<script type="text/javascript">
+    var baseUrl = "<%= ResolveUrl("~/") %>";
+</script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class=" cms-index-index cms-home">
+    <form id="form1" runat="server">
+    <div class="wrapper">
+        <noscript>
+            <div class="global-site-notice noscript">
+                <div class="notice-inner">
+                    <p>
+                        <strong>JavaScript parece estar desactivado en su navegador.</strong><br />
+                        Usted debe tener JavaScript activado en su navegador para utilizar este sitio web.</p>
+                </div>
+            </div>
+        </noscript>
+        <div class="page">
+            <ucHea:header ID="idHeader" runat="server" />
+            <ucNav:navigation ID="idNavigation" runat="server" />
+            <section class="main-container col2-left-layout">
+                <div class="main">
+                    <aside class="col-left sidebar">
+                        <ucCat:categorias id="idCategorias" runat="server" />
+                        <ucMyCart:myCart ID="idMyCart" runat="server" />
+                        <ucBannerIz:bannerIzq ID="idBannerIzq" runat="server" />
+                    </aside>                    
+                    <asp:ContentPlaceHolder ID="parteCentral" runat="server"></asp:ContentPlaceHolder>
+                </div>
+            </section>
+            <footer class="footer-container">
+                <ucFooter:footer id="idFooter" runat="server" />
+            </footer>
+        </div>
+    </div>
+    </form>
+    <script src="<%=ResolveUrl("~/customJS/Comun.js?version=")%><%=ConfigurationManager.AppSettings["version"] %>" type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/customJS/Util.js?version=")%><%=ConfigurationManager.AppSettings["version"] %>" type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/customJS/General.js?version=")%><%=ConfigurationManager.AppSettings["version"] %>" type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/customJS/B2BProductos.js?version=")%><%=ConfigurationManager.AppSettings["version"] %>" type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/customJS/B2BInfo.js?version=")%><%=ConfigurationManager.AppSettings["version"] %>" type="text/javascript"></script>
+</body>
+</html>

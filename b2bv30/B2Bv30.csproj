@@ -1,0 +1,1139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E784CD81-1BE0-4A6C-8BC7-F0D1035D7E9F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>B2Bv30</RootNamespace>
+    <AssemblyName>B2Bv30</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="checkOut.aspx" />
+    <Content Include="albaranes.aspx" />
+    <Content Include="img\familias\logos\bridgestone.jpg" />
+    <Content Include="img\familias\logos\dunlop.jpg" />
+    <Content Include="img\familias\logos\metzeler.jpg" />
+    <Content Include="img\familias\logos\nankkan.jpg" />
+    <Content Include="img\familias\logos\nologo.jpg" />
+    <Content Include="js\calendar\calendar-setup.39a.delayed" />
+    <Content Include="js\calendar\calendar-win2k-1.css.tmp" />
+    <Content Include="js\calendar\calendar.js" />
+    <Content Include="js\jquery-1.7.2.js" />
+    <Content Include="js\lib\ccard.js" />
+    <Content Include="js\mage\captcha.js" />
+    <Content Include="js\mage\cookies.js" />
+    <Content Include="js\mage\translate.js" />
+    <Content Include="js\megnor\advancedmenu.js" />
+    <Content Include="js\megnor\carousel.min.js" />
+    <Content Include="js\megnor\cloud-zoom.1.0.2.min.js" />
+    <Content Include="js\megnor\html5.js" />
+    <Content Include="js\megnor\jquery-1.7.1.min.js" />
+    <Content Include="js\megnor\jquery.colorbox.min.js" />
+    <Content Include="js\megnor\jquery.selectbox-0.2.min.js" />
+    <Content Include="js\megnor\jstree.min.js" />
+    <Content Include="js\megnor\megnor.min.js" />
+    <Content Include="js\megnor\scrolltop.min.js" />
+    <Content Include="js\megnor\tm_jquery.flexslider.min.js" />
+    <Content Include="js\prototype\prototype.js" />
+    <Content Include="js\prototype\validation.js" />
+    <Content Include="js\scriptaculous\builder.js" />
+    <Content Include="js\scriptaculous\controls.js" />
+    <Content Include="js\scriptaculous\dragdrop.js" />
+    <Content Include="js\scriptaculous\effects.js" />
+    <Content Include="js\scriptaculous\slider.js" />
+    <Content Include="js\varien\configurable.js" />
+    <Content Include="js\varien\form.js" />
+    <Content Include="js\varien\js.js" />
+    <Content Include="js\varien\menu.js" />
+    <Content Include="js\varien\product.js" />
+    <Content Include="pedidos.aspx" />
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.AlbaranActualizarFicheroResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.AlbaranesDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.ArrayOfString.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.BusquedaFallida.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.BusquedasFallidasDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.BusquedasFallidasEliminarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.BusquedasFallidasGuardarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.BuzonesComboResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.CambiarPasswordResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.Cliente.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.ClientesBorrarSiExisteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.ClientesComboResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.ClientesDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.ClientesGuardarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.ClientesVsPedidos.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.ClientesVsPedidosDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.Combo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.ConfigDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.ConfiguracionGuardarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.DetallesPedidoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.DetallesReservaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.Ecotasa.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.EcotasaBorrarSiExisteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.EcotasaGuardarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.EcotasasDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.EfectoActualizarFicheroResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.Estado.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.EstadoActualYSiguienteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.EstadoReservaActualYSiguienteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.EstadosComboResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.EstadosReservaComboResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.Factura.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.FacturaActualizarFicheroResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.FacturaDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.FacturasBorrarSiExisteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.FacturasDataDesglosadaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.FacturasDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.FacturasGuardarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.FacturasPorClienteBorrarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.Familia.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.FamiliasComboResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.FamiliasLogoComboResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.FamiliasLogoDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.FamiliasLogoEliminarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.FamiliasLogoGuardarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.listaRolesComboResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.listaTiposUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.listaUsuariosComboResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.LoginOutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.LoginResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.Mensaje.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.MensajeGuardarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.MensajeMarcarComoLeidoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.MensajesDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.ModelosComboResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.Notificaciones.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.NotificacionesDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.ParametroConfig.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.Pedido.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.PedidosDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.PedidosGuardarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.PedidosXClientesDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.PedidoXCliente.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.Pendiente.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.PendientesBorrarSiExisteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.PendientesDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.PendientesGuardarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.PendientesPorProductoDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.PerfilUsuarioGuardarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.PermisosGuardarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.Producto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.ProductosBuscadorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.ProductosBuscadorStaffResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.ProductosBuscadorV3Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.ProductosDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.ProductosDataV3Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.ProductosGuardarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.ProductosPedidoGetDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.ProductosReservaGetDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.Promocion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.PromocionesDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.PromocionesEliminarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.PromocionesGuardarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.Reserva.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.ReservasDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.ReservasGuardarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.SendEmailFromGUIResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.SendEmailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.Sesion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.SesionesDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.Stock.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.StockDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.TipoNeumaticosComboResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.Usuario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.UsuariosDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.UsuariosEliminarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.UsuariosGuardarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.UsuarioTipoBusquedaGuardarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.Vencimiento.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.VencimientosDataDesglosadaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.VencimientosDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\B2BWs\B2Bv30.B2BWs.VencimientosGuardarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\B2BWs\configuration91.svcinfo" />
+    <None Include="Service References\B2BWs\configuration.svcinfo" />
+    <None Include="Service References\B2BWs\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\B2BWs\ServiceLocal.disco" />
+    <Content Include="ServiceLocal.asmx" />
+    <Content Include="skin\frontend\default\MAG080146\images\logo_NA.png" />
+    <Content Include="vencimientos.aspx" />
+    <Content Include="CustomJS\B2BInfo.js" />
+    <Content Include="facturas.aspx" />
+    <Content Include="detalleProducto.aspx" />
+    <Content Include="CustomJS\B2BProductos.js" />
+    <Content Include="CustomJS\Comun.js" />
+    <Content Include="CustomJS\General.js" />
+    <Content Include="CustomJS\Util.js" />
+    <Content Include="funciones\comun.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="media\catalog\category\category_banner_67.jpg" />
+    <Content Include="media\catalog\category\category_banner_68.jpg" />
+    <Content Include="media\catalog\category\category_banner_69.jpg" />
+    <Content Include="media\catalog\category\category_banner_70.jpg" />
+    <Content Include="media\catalog\category\category_banner_71.jpg" />
+    <Content Include="media\catalog\category\category_banner_72.jpg" />
+    <Content Include="media\catalog\category\category_banner_73.jpg" />
+    <Content Include="media\catalog\category\category_banner_74.jpg" />
+    <Content Include="media\catalog\category\category_banner_75.jpg" />
+    <Content Include="media\catalog\category\category_banner_76.jpg" />
+    <Content Include="media\catalog\category\category_banner_77.jpg" />
+    <Content Include="media\catalog\category\category_banner_78.jpg" />
+    <Content Include="media\catalog\category\category_banner_79.jpg" />
+    <Content Include="media\catalog\category\category_banner_80.jpg" />
+    <Content Include="media\catalog\category\category_banner_81.jpg" />
+    <Content Include="media\catalog\category\category_banner_82.jpg" />
+    <Content Include="media\catalog\category\category_banner_83.jpg" />
+    <Content Include="media\catalog\category\category_banner_84.jpg" />
+    <Content Include="media\catalog\category\category_banner_85.jpg" />
+    <Content Include="media\catalog\category\category_banner_86.jpg" />
+    <Content Include="media\catalog\category\category_banner_87.jpg" />
+    <Content Include="media\catalog\category\category_banner_88.jpg" />
+    <Content Include="media\catalog\category\category_banner_89.jpg" />
+    <Content Include="media\catalog\category\category_banner_90.jpg" />
+    <Content Include="media\catalog\category\category_banner_91.jpg" />
+    <Content Include="media\catalog\category\category_banner_92.jpg" />
+    <Content Include="media\catalog\category\category_banner_93.jpg" />
+    <Content Include="media\catalog\category\category_banner_94.jpg" />
+    <Content Include="media\catalog\product\cache\20\image\300x300\9df78eab33525d08d6e5fb8d27136e95\1\3\13_12.jpg" />
+    <Content Include="media\catalog\product\cache\20\image\300x300\9df78eab33525d08d6e5fb8d27136e95\2\1\21.jpg" />
+    <Content Include="media\catalog\product\cache\20\image\300x300\9df78eab33525d08d6e5fb8d27136e95\4\_\4_1_15_1.jpg" />
+    <Content Include="media\catalog\product\cache\20\image\300x300\9df78eab33525d08d6e5fb8d27136e95\9\_\9_3_7.jpg" />
+    <Content Include="media\catalog\product\cache\20\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\0\10_3_4.jpg" />
+    <Content Include="media\catalog\product\cache\20\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\3\13_12.jpg" />
+    <Content Include="media\catalog\product\cache\20\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\4\14_8.jpg" />
+    <Content Include="media\catalog\product\cache\20\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\9\19_1_1.jpg" />
+    <Content Include="media\catalog\product\cache\20\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13_1.jpg" />
+    <Content Include="media\catalog\product\cache\20\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\0\20_2.jpg" />
+    <Content Include="media\catalog\product\cache\20\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\1\21.jpg" />
+    <Content Include="media\catalog\product\cache\20\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\2\22_2.jpg" />
+    <Content Include="media\catalog\product\cache\20\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\8\28_1.jpg" />
+    <Content Include="media\catalog\product\cache\20\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\9\29_1.jpg" />
+    <Content Include="media\catalog\product\cache\20\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14_1.jpg" />
+    <Content Include="media\catalog\product\cache\20\image\600x600\9df78eab33525d08d6e5fb8d27136e95\3\_\3_11_1.jpg" />
+    <Content Include="media\catalog\product\cache\20\image\600x600\9df78eab33525d08d6e5fb8d27136e95\4\_\4_1_15_1.jpg" />
+    <Content Include="media\catalog\product\cache\20\image\600x600\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_7.jpg" />
+    <Content Include="media\catalog\product\cache\20\image\600x600\9df78eab33525d08d6e5fb8d27136e95\8\_\8_5_3.jpg" />
+    <Content Include="media\catalog\product\cache\20\image\600x600\9df78eab33525d08d6e5fb8d27136e95\9\_\9_3_7.jpg" />
+    <Content Include="media\catalog\product\cache\20\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13_2.jpg" />
+    <Content Include="media\catalog\product\cache\20\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\2\0\20_5.jpg" />
+    <Content Include="media\catalog\product\cache\20\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14_3.jpg" />
+    <Content Include="media\catalog\product\cache\20\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\3\_\3_11.jpg" />
+    <Content Include="media\catalog\product\cache\20\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\4\_\4_1_15_1.jpg" />
+    <Content Include="media\catalog\product\cache\20\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\6\_\6_2_4.jpg" />
+    <Content Include="media\catalog\product\cache\20\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\1\3\13_12.jpg" />
+    <Content Include="media\catalog\product\cache\20\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\1\7\17_1_2.jpg" />
+    <Content Include="media\catalog\product\cache\20\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13_2.jpg" />
+    <Content Include="media\catalog\product\cache\20\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\2\0\20_3.jpg" />
+    <Content Include="media\catalog\product\cache\20\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\2\0\20_5.jpg" />
+    <Content Include="media\catalog\product\cache\20\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\2\1\21.jpg" />
+    <Content Include="media\catalog\product\cache\20\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\2\2\22_3.jpg" />
+    <Content Include="media\catalog\product\cache\20\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\2\8\28.jpg" />
+    <Content Include="media\catalog\product\cache\20\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14_3.jpg" />
+    <Content Include="media\catalog\product\cache\20\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\3\_\3_11.jpg" />
+    <Content Include="media\catalog\product\cache\20\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\4\_\4_1_15_1.jpg" />
+    <Content Include="media\catalog\product\cache\20\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\6\_\6_2_4.jpg" />
+    <Content Include="media\catalog\product\cache\20\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_6.jpg" />
+    <Content Include="media\catalog\product\cache\20\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\9\_\9_3_7.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\50x50\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13_2.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\50x50\9df78eab33525d08d6e5fb8d27136e95\2\0\20_3.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\50x50\9df78eab33525d08d6e5fb8d27136e95\2\8\28.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\50x50\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14_3.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\50x50\9df78eab33525d08d6e5fb8d27136e95\6\_\6_2_4.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\50x50\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_6.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\1\3\13_12.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\1\7\17_1_2.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13_2.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\2\0\20_3.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\2\0\20_5.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\2\2\22_3.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\3\_\3_11.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\4\_\4_1_15_1.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\6\_\6_2_4.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\0\10_3_4.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\3\13_12.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\4\14_8.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\9\19_1_1.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13_1.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\0\20_2.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\1\21.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\2\22_2.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\8\28_1.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\9\29_1.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14_1.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\3\_\3_11_1.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\4\_\4_1_15_1.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_7.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\8\_\8_5_3.jpg" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\9\_\9_3_7.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\300x300\9df78eab33525d08d6e5fb8d27136e95\1\3\13_12.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\300x300\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13_2.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\300x300\9df78eab33525d08d6e5fb8d27136e95\2\0\20_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\300x300\9df78eab33525d08d6e5fb8d27136e95\2\0\20_5.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\300x300\9df78eab33525d08d6e5fb8d27136e95\2\1\21.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\300x300\9df78eab33525d08d6e5fb8d27136e95\2\2\22_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\300x300\9df78eab33525d08d6e5fb8d27136e95\2\8\28.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\300x300\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\300x300\9df78eab33525d08d6e5fb8d27136e95\3\_\3_11.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\300x300\9df78eab33525d08d6e5fb8d27136e95\6\_\6_2_4.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\300x300\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_6.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\300x300\9df78eab33525d08d6e5fb8d27136e95\9\_\9_3_7.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\0\10_3_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\0\10_3_4.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\3\13_12.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\4\14_8.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\7\17_6.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\8\18_6.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\9\19_1_1.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\9\19_1_2.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13_2.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\0\20_2.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\0\20_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\0\20_4.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\0\20_5.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\1\21.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\1\21_1.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\1\21_2.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\2\22_2.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\2\22_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\2\22_4.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\3\23_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\3\23_4.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\4\24_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\7\27.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\8\28.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\8\28_1.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\9\29.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\9\29_1.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14_2.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\3\0\30.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\3\_\3_11.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\3\_\3_11_2.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\3\_\3_11_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\4\_\4_1_15.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\4\_\4_1_15_2.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\4\_\4_1_15_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\5\_\5_1_14.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\6\_\6_2_4.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_6.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_7.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_8.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\8\_\8_5_2.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\8\_\8_5_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\8\_\8_5_4.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\9\_\9_3_6.jpg" />
+    <Content Include="media\catalog\product\cache\21\image\600x600\9df78eab33525d08d6e5fb8d27136e95\9\_\9_3_7.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\1\3\13_12.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\1\7\17_1_2.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13_2.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\2\0\20_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\2\0\20_5.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\2\1\21.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\2\2\22_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\2\8\28.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\3\_\3_11.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\4\_\4_1_15_1.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\6\_\6_2_4.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_6.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\9\_\9_3_7.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\1\3\13_12.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\1\7\17_1_2.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13_2.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\2\0\20_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\2\0\20_5.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\2\1\21.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\2\2\22_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\2\8\28.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\3\_\3_11.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\4\_\4_1_15_1.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\6\_\6_2_4.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_6.jpg" />
+    <Content Include="media\catalog\product\cache\21\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\9\_\9_3_7.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\50x50\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13_2.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\50x50\9df78eab33525d08d6e5fb8d27136e95\2\0\20_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\50x50\9df78eab33525d08d6e5fb8d27136e95\2\0\20_5.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\50x50\9df78eab33525d08d6e5fb8d27136e95\2\1\21.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\50x50\9df78eab33525d08d6e5fb8d27136e95\2\8\28.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\50x50\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\50x50\9df78eab33525d08d6e5fb8d27136e95\6\_\6_2_4.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\50x50\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_6.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\50x50\9df78eab33525d08d6e5fb8d27136e95\9\_\9_3_7.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\1\7\17_1_2.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\2\0\20_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\2\0\20_5.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\2\2\22_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\4\_\4_1_15_1.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\6\_\6_2_4.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_6.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\0\10_3_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\0\10_3_4.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\3\13_12.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\4\14_8.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\7\17_6.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\8\18_6.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\9\19_1_1.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\9\19_1_2.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13_2.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\0\20_2.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\0\20_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\0\20_4.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\0\20_5.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\1\21.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\1\21_1.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\1\21_2.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\2\22_2.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\2\22_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\2\22_4.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\3\23_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\3\23_4.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\4\24_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\7\27.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\8\28.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\8\28_1.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\9\29.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\9\29_1.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14_2.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\3\0\30.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\3\_\3_11.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\3\_\3_11_2.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\3\_\3_11_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\4\_\4_1_15.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\4\_\4_1_15_2.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\4\_\4_1_15_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\5\_\5_1_14.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\6\_\6_2_4.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_6.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_7.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_8.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\8\_\8_5_2.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\8\_\8_5_3.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\8\_\8_5_4.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\9\_\9_3_6.jpg" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\9\_\9_3_7.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\300x300\9df78eab33525d08d6e5fb8d27136e95\1\3\13_12.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\300x300\9df78eab33525d08d6e5fb8d27136e95\1\7\17_1_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\300x300\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\300x300\9df78eab33525d08d6e5fb8d27136e95\2\0\20_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\300x300\9df78eab33525d08d6e5fb8d27136e95\2\0\20_5.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\300x300\9df78eab33525d08d6e5fb8d27136e95\2\1\21.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\300x300\9df78eab33525d08d6e5fb8d27136e95\2\2\22_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\300x300\9df78eab33525d08d6e5fb8d27136e95\2\8\28.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\300x300\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\300x300\9df78eab33525d08d6e5fb8d27136e95\3\_\3_11.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\300x300\9df78eab33525d08d6e5fb8d27136e95\6\_\6_2_4.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\300x300\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_6.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\300x300\9df78eab33525d08d6e5fb8d27136e95\9\_\9_3_7.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\0\10_3_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\0\10_3_4.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\3\13_12.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\4\14_8.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\7\17_1_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\7\17_6.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\8\18_6.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\8\18_7.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\9\19_1_1.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\9\19_1_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\0\20_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\0\20_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\0\20_4.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\0\20_5.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\1\21.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\1\21_1.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\1\21_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\2\22_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\2\22_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\2\22_4.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\3\23_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\3\23_4.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\4\24_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\7\27.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\8\28.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\8\28_1.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\9\29.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\9\29_1.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_15.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\3\0\30.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\3\_\3_11.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\3\_\3_11_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\3\_\3_11_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\3\_\3_12.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\4\_\4_1_15.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\4\_\4_1_15_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\4\_\4_1_15_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\5\_\5_1_14.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\6\_\6_2_4.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_6.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_7.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_8.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\8\_\8_5_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\8\_\8_5_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\8\_\8_5_4.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\9\_\9_3_6.jpg" />
+    <Content Include="media\catalog\product\cache\22\image\600x600\9df78eab33525d08d6e5fb8d27136e95\9\_\9_3_7.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\1\3\13_12.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\1\7\17_1_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\2\0\20_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\2\0\20_5.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\2\1\21.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\2\2\22_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\2\8\28.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\3\_\3_11.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\4\_\4_1_15_1.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\6\_\6_2_4.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_6.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\150x150\9df78eab33525d08d6e5fb8d27136e95\9\_\9_3_7.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\1\3\13_12.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\1\7\17_1_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\2\0\20_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\2\0\20_5.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\2\1\21.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\2\2\22_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\2\8\28.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\3\_\3_11.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\4\_\4_1_15_1.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\6\_\6_2_4.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_6.jpg" />
+    <Content Include="media\catalog\product\cache\22\small_image\155x155\9df78eab33525d08d6e5fb8d27136e95\9\_\9_3_7.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\50x50\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\50x50\9df78eab33525d08d6e5fb8d27136e95\2\0\20_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\50x50\9df78eab33525d08d6e5fb8d27136e95\2\8\28.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\1\3\13_12.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\1\7\17_1_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\2\0\20_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\2\0\20_5.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\2\1\21.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\2\2\22_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\2\8\28.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\4\_\4_1_15_1.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\6\_\6_2_4.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_6.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\50x\9df78eab33525d08d6e5fb8d27136e95\9\_\9_3_7.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\0\10_3_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\0\10_3_4.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\3\13_12.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\4\14_8.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\7\17_1_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\7\17_6.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\8\18_6.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\8\18_7.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\9\19_1_1.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\9\19_1_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\1\_\1_2_13_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\0\20_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\0\20_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\0\20_4.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\0\20_5.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\1\21.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\1\21_1.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\1\21_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\2\22_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\2\22_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\2\22_4.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\3\23_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\3\23_4.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\4\24_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\7\27.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\8\28.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\8\28_1.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\9\29.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\9\29_1.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_14_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\2\_\2_1_15.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\3\0\30.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\3\_\3_11.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\3\_\3_11_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\3\_\3_11_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\3\_\3_12.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\4\_\4_1_15.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\4\_\4_1_15_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\4\_\4_1_15_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\5\_\5_1_14.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\6\_\6_2_4.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_6.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_7.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_8.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\8\_\8_5_2.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\8\_\8_5_3.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\8\_\8_5_4.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\9\_\9_3_6.jpg" />
+    <Content Include="media\catalog\product\cache\22\thumbnail\74x\9df78eab33525d08d6e5fb8d27136e95\9\_\9_3_7.jpg" />
+    <Content Include="media\llanta.jpg" />
+    <Content Include="media\neumatico.jpg" />
+    <None Include="Properties\PublishProfiles\B2Bv30.pubxml" />
+    <Content Include="skin\frontend\base\default\css\widgets.css" />
+    <Content Include="skin\frontend\base\default\images\widgets\i_block-list.gif" />
+    <Content Include="skin\frontend\base\default\images\widgets\i_widget-link.gif" />
+    <Content Include="skin\frontend\base\default\images\widgets\i_widget-new.gif" />
+    <Content Include="skin\frontend\default\default\css\print.css" />
+    <Content Include="skin\frontend\default\MAG080146\css\megnor\carousel.css" />
+    <Content Include="skin\frontend\default\MAG080146\css\megnor\cloud-lightbox-zoom.css" />
+    <Content Include="skin\frontend\default\MAG080146\css\megnor\custom.css" />
+    <Content Include="skin\frontend\default\MAG080146\css\megnor\responsive.css" />
+    <Content Include="skin\frontend\default\MAG080146\css\megnor\style.css" />
+    <Content Include="skin\frontend\default\MAG080146\css\megnor\tm_flexslider.css" />
+    <Content Include="skin\frontend\default\MAG080146\css\styles.css" />
+    <Content Include="skin\frontend\default\MAG080146\images\add-to-links.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\arrow-down.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\arrow-up.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\back_to_top.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\banners\advancemenu-banner.jpg" />
+    <Content Include="skin\frontend\default\MAG080146\images\banners\left_banner.jpg" />
+    <Content Include="skin\frontend\default\MAG080146\images\banners\main-banner1.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\banners\main-banner2.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\banners\main-banner3.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\banners\sub-banner1.jpg" />
+    <Content Include="skin\frontend\default\MAG080146\images\banners\sub-banner2.jpg" />
+    <Content Include="skin\frontend\default\MAG080146\images\best_selling_tr_even_bg.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\best_selling_tr_odd_bg.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\bg.jpg" />
+    <Content Include="skin\frontend\default\MAG080146\images\bkg_collapse-gm.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\bkg_collapse.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\bkg_nav2.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\bkg_pipe1.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\bkg_rating.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\btn_edit.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\btn_gm-close.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\btn_previous.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\btn_remove.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\btn_remove2.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\btn_trash.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\btn_window_close.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\call.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\call_hover.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\cart-respo.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\cart_arrow.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\cart_arrow_up.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\footer_pipe.jpg" />
+    <Content Include="skin\frontend\default\MAG080146\images\header_down.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\header_down_responsive.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\header_pipe.jpg" />
+    <Content Include="skin\frontend\default\MAG080146\images\header_up.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\header_up_responsive.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\i_availability_only_arrow.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\i_msg-error.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\i_msg-note.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\i_msg-success.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\i_notice.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\i_print.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\i_rss-big.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\i_rss.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\i_search_criteria.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\Logo.jpg" />
+    <Content Include="skin\frontend\default\MAG080146\images\logo.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\magnifier_handle.html" />
+    <Content Include="skin\frontend\default\MAG080146\images\map_popup_arrow.html" />
+    <Content Include="skin\frontend\default\MAG080146\images\megnor\availability.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\megnor\black_toggle_arrow.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\megnor\cat_arrow.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\megnor\cat_arrow_hover.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\megnor\edit.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\megnor\sprite.html" />
+    <Content Include="skin\frontend\default\MAG080146\images\megnor\toggle-arrow.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\nav_spacer.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\pager_arrow_left.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\pager_arrow_right.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\shipping.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\shipping_hover.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\slider_bg.html" />
+    <Content Include="skin\frontend\default\MAG080146\images\sprite.png" />
+    <Content Include="skin\frontend\default\MAG080146\images\validation_advice_bg.gif" />
+    <Content Include="skin\frontend\default\MAG080146\images\window_overlay.html" />
+    <Content Include="skin\frontend\default\MAG080146\image\megnor\grabbing.html" />
+    <Content Include="skin\frontend\default\MAG080146\image\megnor\sprite.html" />
+    <Content Include="skin\frontend\default\MAG080146\img\megnor\grabbing.html" />
+    <Content Include="skin\frontend\default\MAG080146\js\custom.js" />
+    <Content Include="UserControls\ucBannerIzquierda.ascx" />
+    <Content Include="UserControls\ucCategorias.ascx" />
+    <Content Include="UserControls\ucFooter.ascx" />
+    <Content Include="UserControls\ucHeaderTop.ascx" />
+    <Content Include="UserControls\ucLogin.ascx" />
+    <Content Include="UserControls\ucMyCart.ascx" />
+    <Content Include="UserControls\ucNavigation.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="index.aspx" />
+    <Content Include="login.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="checkOut.aspx.cs">
+      <DependentUpon>checkOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkOut.aspx.designer.cs">
+      <DependentUpon>checkOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="albaranes.aspx.cs">
+      <DependentUpon>albaranes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="albaranes.aspx.designer.cs">
+      <DependentUpon>albaranes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pedidos.aspx.cs">
+      <DependentUpon>pedidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pedidos.aspx.designer.cs">
+      <DependentUpon>pedidos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\B2BWs\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceLocal.asmx.cs">
+      <DependentUpon>ServiceLocal.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="vencimientos.aspx.cs">
+      <DependentUpon>vencimientos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vencimientos.aspx.designer.cs">
+      <DependentUpon>vencimientos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="facturas.aspx.cs">
+      <DependentUpon>facturas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="facturas.aspx.designer.cs">
+      <DependentUpon>facturas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="detalleProducto.aspx.cs">
+      <DependentUpon>detalleProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="detalleProducto.aspx.designer.cs">
+      <DependentUpon>detalleProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="funciones\comun.aspx.cs">
+      <DependentUpon>comun.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.Master.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Principal.Master.designer.cs">
+      <DependentUpon>Principal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\ucBannerIzquierda.ascx.cs">
+      <DependentUpon>ucBannerIzquierda.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucBannerIzquierda.ascx.designer.cs">
+      <DependentUpon>ucBannerIzquierda.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucCategorias.ascx.cs">
+      <DependentUpon>ucCategorias.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCategorias.ascx.designer.cs">
+      <DependentUpon>ucCategorias.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucFooter.ascx.cs">
+      <DependentUpon>ucFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucFooter.ascx.designer.cs">
+      <DependentUpon>ucFooter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucHeaderTop.ascx.cs">
+      <DependentUpon>ucHeaderTop.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucHeaderTop.ascx.designer.cs">
+      <DependentUpon>ucHeaderTop.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucLogin.ascx.cs">
+      <DependentUpon>ucLogin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucLogin.ascx.designer.cs">
+      <DependentUpon>ucLogin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucMyCart.ascx.cs">
+      <DependentUpon>ucMyCart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucMyCart.ascx.designer.cs">
+      <DependentUpon>ucMyCart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucNavigation.ascx.cs">
+      <DependentUpon>ucNavigation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucNavigation.ascx.designer.cs">
+      <DependentUpon>ucNavigation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Principal.Master" />
+    <Content Include="media\catalog\product\cache\20\thumbnail\50x50\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_6.jpg.tmp" />
+    <Content Include="media\catalog\product\cache\21\image\300x300\9df78eab33525d08d6e5fb8d27136e95\7\_\7_2_6.jpg.tmp" />
+    <Content Include="media\catalog\product\cache\21\thumbnail\50x50\9df78eab33525d08d6e5fb8d27136e95\2\0\20_3.jpg.tmp" />
+    <Content Include="skin\frontend\default\MAG080146\images\pager_arrow_left.gif.tmp" />
+    <None Include="Service References\B2BWs\ServiceLocal.wsdl" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\B2B.Classes\B2B.Classes.csproj">
+      <Project>{22c1fdab-b011-45f2-8b88-1b70aaf8a552}</Project>
+      <Name>B2B.Classes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\B2B.Types\B2B.Types.csproj">
+      <Project>{f8571c84-23ca-4889-842f-7877a1ba77f7}</Project>
+      <Name>B2B.Types</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FAL\FAL.csproj">
+      <Project>{33521b77-2558-4d78-85a1-476e3e2dd161}</Project>
+      <Name>FAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\B2BWs\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51332/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

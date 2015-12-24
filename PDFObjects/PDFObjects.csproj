@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CFB37188-6CFF-4336-B9E6-8E6057787F29}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PDFObjects</RootNamespace>
+    <AssemblyName>PDFObjects</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Reports, Version=0.8.1774.35468, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>PDF\Reports.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlbaranPDF.cs" />
+    <Compile Include="oldAlbaranPDF.cs" />
+    <Compile Include="oldReservaPDF.cs" />
+    <Compile Include="oldPedidoPDF.cs" />
+    <Compile Include="oldFacturaPDF.cs" />
+    <Compile Include="ReservaPDF.cs" />
+    <Compile Include="FacturaPDF.cs" />
+    <Compile Include="PedidoPDF.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EfectoPDF.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\100plus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\ATP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\Dunlop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\GTradial.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\Hijoin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\Michelin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\Nankang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\NeumaticosAtlantico.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\PCW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\Pirelli.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\RHalurad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="images\NA_cabecera.jpg" />
+    <EmbeddedResource Include="images\NA_marcaagua.jpg" />
+    <EmbeddedResource Include="images\NA_pie.jpg" />
+    <Content Include="PDF\Reports.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\B2B.Generic\B2B.Generic.csproj">
+      <Project>{A0CE99B0-4C59-4F51-9CF7-9878F0A90370}</Project>
+      <Name>B2B.Generic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\B2B.Types\B2B.Types.csproj">
+      <Project>{F8571C84-23CA-4889-842F-7877A1BA77F7}</Project>
+      <Name>B2B.Types</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

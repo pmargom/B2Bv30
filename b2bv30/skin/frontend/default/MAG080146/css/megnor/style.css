@@ -1,0 +1,95 @@
+#advancedmenu {
+    position:relative;        
+	margin:0 auto;
+ 	z-index:9;
+	height:46px;
+}
+div.menu {
+    float: left;
+}
+div.menu .parentMenu
+{
+background:url("../../images/nav_spacer.gif") no-repeat scroll left center transparent; 
+}
+div.menu .parentMenu.home_link{background:none;}
+div.menu.act {
+   background:none;
+}
+div.menu.active {
+	background:none;
+	color:#5E5E5E ; 
+}
+div.megnor-advanced-menu-popup { 
+ 
+	position:absolute;
+	display: none;
+	text-align:left; 
+	border:1px solid #ddd;
+	top:46px;
+	border-radius:0 0 5px 5px; 	
+	background: #f5f5f5; 
+
+	
+}
+.megnor-advanced-menu-popup_inner{	
+	border-radius:0 0 5px 5px; 
+		background: #f5f5f5;
+
+
+
+}
+div.menu a, div.megnor-advanced-menu-popup a {   display:block; }
+div.megnor-advanced-menu-popup a		
+{ 
+	padding:5px 10px;
+	text-transform:none;
+	
+}
+ div.megnor-advanced-menu-popup a:hover{}
+div.megnor-advanced-menu-popup a.actParent {
+    color: #4D4D4D;
+}
+div.megnor-advanced-menu-popup a.act {
+    color: #A52A2A;
+}
+div.column {
+    float:left;
+    width:180px; /* column width */
+    padding:5px;
+}
+div.itemSubMenu {
+    /*margin-left:20px;*/
+}
+.clearBoth {
+    clear:both;
+}
+
+div.megnor-advanced-menu-popup .block1		{ }
+div.megnor-advanced-menu-popup .block2		{ padding:5px;}
+#advancedmenu .megnor-advanced-menu-popup .itemMenu  a	{ font-weight:normal;  font-size: 13px;}
+#advancedmenu .level1 > a.itemMenuName {
+    font-size: 16px;
+	font-weight:normal  ; color:#CF0202 ;
+/*	background:url("../../images/menu-line.jpg") repeat-x scroll left bottom transparent;*/
+} 
+
+.itemSubMenu .itemMenu 
+{
+	margin-left:10px;
+}
+.itemSubMenu .itemMenu a.itemMenuName
+{
+	/* background: url("../../images/megnor/cat_arrow.png") no-repeat scroll 0px center transparent;*/
+    color: #666; 
+    font-weight: normal;
+    padding: 2px 0 2px 0; 
+	font-family:'Open Sans',Arial, Helvetica, sans-serif;
+	font-size:14px;
+
+}
+.itemSubMenu .itemMenu a:hover	{ /*background:url("../../images/megnor/cat_arrow_hover.png") no-repeat scroll 0px center transparent; */ color: #CF0202;}
+
+.custom_menu:hover .customblock_inner {    display: block;} 
+.customblock_inner		{ background:#FFF; width:250px; padding:5px;}
+
+ 

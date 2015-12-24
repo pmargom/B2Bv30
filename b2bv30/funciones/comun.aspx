@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="comun.aspx.cs" Inherits="funciones_comun" %>

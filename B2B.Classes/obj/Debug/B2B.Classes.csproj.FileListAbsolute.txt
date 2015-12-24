@@ -1,0 +1,14 @@
+C:\Dropbox\Dev\b2bv30\B2B.Classes\bin\Debug\B2B.Classes.dll
+C:\Dropbox\Dev\b2bv30\B2B.Classes\bin\Debug\B2B.Classes.pdb
+C:\Dropbox\Dev\b2bv30\B2B.Classes\obj\Debug\B2B.Classes.dll
+C:\Dropbox\Dev\b2bv30\B2B.Classes\obj\Debug\B2B.Classes.pdb
+C:\Development\B2Bv30KK\B2Bv30\B2B.Classes\bin\Debug\B2B.Classes.dll
+C:\Development\B2Bv30KK\B2Bv30\B2B.Classes\bin\Debug\B2B.Classes.pdb
+C:\Development\B2Bv30KK\B2Bv30\B2B.Classes\obj\Debug\B2B.Classes.csprojResolveAssemblyReference.cache
+C:\Development\B2Bv30KK\B2Bv30\B2B.Classes\obj\Debug\B2B.Classes.dll
+C:\Development\B2Bv30KK\B2Bv30\B2B.Classes\obj\Debug\B2B.Classes.pdb
+C:\Development\B2Bv30\B2B.Classes\bin\Debug\B2B.Classes.dll
+C:\Development\B2Bv30\B2B.Classes\bin\Debug\B2B.Classes.pdb
+C:\Development\B2Bv30\B2B.Classes\obj\Debug\B2B.Classes.csprojResolveAssemblyReference.cache
+C:\Development\B2Bv30\B2B.Classes\obj\Debug\B2B.Classes.dll
+C:\Development\B2Bv30\B2B.Classes\obj\Debug\B2B.Classes.pdb

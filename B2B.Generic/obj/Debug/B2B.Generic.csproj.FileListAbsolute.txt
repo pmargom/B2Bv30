@@ -1,0 +1,14 @@
+C:\Dropbox\Dev\b2bv30\B2B.Generic\bin\Debug\B2B.Generic.dll
+C:\Dropbox\Dev\b2bv30\B2B.Generic\bin\Debug\B2B.Generic.pdb
+C:\Dropbox\Dev\b2bv30\B2B.Generic\obj\Debug\B2B.Generic.dll
+C:\Dropbox\Dev\b2bv30\B2B.Generic\obj\Debug\B2B.Generic.pdb
+C:\Development\B2Bv30KK\B2Bv30\B2B.Generic\bin\Debug\B2B.Generic.dll
+C:\Development\B2Bv30KK\B2Bv30\B2B.Generic\bin\Debug\B2B.Generic.pdb
+C:\Development\B2Bv30KK\B2Bv30\B2B.Generic\obj\Debug\B2B.Generic.csprojResolveAssemblyReference.cache
+C:\Development\B2Bv30KK\B2Bv30\B2B.Generic\obj\Debug\B2B.Generic.dll
+C:\Development\B2Bv30KK\B2Bv30\B2B.Generic\obj\Debug\B2B.Generic.pdb
+C:\Development\B2Bv30\B2B.Generic\bin\Debug\B2B.Generic.dll
+C:\Development\B2Bv30\B2B.Generic\bin\Debug\B2B.Generic.pdb
+C:\Development\B2Bv30\B2B.Generic\obj\Debug\B2B.Generic.csprojResolveAssemblyReference.cache
+C:\Development\B2Bv30\B2B.Generic\obj\Debug\B2B.Generic.dll
+C:\Development\B2Bv30\B2B.Generic\obj\Debug\B2B.Generic.pdb
